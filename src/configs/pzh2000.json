@@ -1,0 +1,25 @@
+{
+    "Speed": 30,
+    "Times": {
+        "Loading": 6,
+        "Aligning": 2,
+        "Stowing": 2
+    },
+    "Ammunition": [
+        {
+            "Ammunition Type": "High Explosive",
+            "Fuze": "Multi",
+            "Amount": 45
+        },
+        {
+            "Ammunition Type": "Illumination",
+            "Fuze": "Multi",
+            "Amount": 10
+        },
+        {
+            "Ammunition Type": "Smoke",
+            "Fuze": "Time",
+            "Amount": 10
+        }
+    ]
+}

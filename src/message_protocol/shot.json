@@ -1,0 +1,44 @@
+{
+    "Simulated Shot": {
+        "Time Fired": {
+            "type": "number",
+                "minimum": 0
+        },
+        "Location": {
+            "System": {
+                "type": "string",
+                "enum": [
+                    "MGRS"
+                ]
+            },
+            "Latitude": {
+                "type": "number",
+                "minimum": 0
+            },
+            "Longitude": {
+                "type": "number",
+                "minimum": 0
+            },
+            "Elevation": {
+                "type": "number",
+                "minimum": 0
+            }
+        },
+        "Time Of Flight": {
+            "type": "number",
+            "minimum": 0
+        },
+        "Ammunition Type": {
+            "type": "string",
+            "enum": [
+                "High Explosive",
+                "High Explosive Airburst",
+                "Illumination",
+                "Smoke"
+            ]
+        },
+        "Caliber": {
+            "type": "integer"
+        }
+    }
+}

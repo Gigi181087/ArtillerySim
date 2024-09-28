@@ -1,0 +1,10 @@
+{
+    "Mission type": {
+        "type": "string",
+        "enum": [
+            "Fire for effect",
+            "adjust fire"
+        ]
+    }
+
+}

@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NMF:Messages:FireSupport:FireOrder",
+    "Fire Order": {
+        "Fire ID": {
+            "type": "string"
+        },
+        "Target Location":{
+            "$ref": "NMF:DataTypes:General:Coordinate"
+        },
+        "Time On Target": {
+            "$ref": "NMF:DataTypes:General:Time"
+        },
+        "At My Command": {
+            "type": "bool"
+        },
+        "Ammunition": {
+            "type": "string",
+            "enum": [
+                "High Explosive",
+                "Illumination",
+                "Smoke"
+            ]
+        },
+        "Number of Rounds": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "Distribution": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "Location": {
+                    "$ref": "NMF:DataTypes:General:Coordinate"
+                },
+                "Time On Target": {
+                    "$ref": "NMF:DataTypes:General:Time"
+                }
+            }
+        }
+    }
+}

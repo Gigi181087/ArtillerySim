@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NMF:DataTypes:General:Coordinate",
+    "properties": {
+        "Latitude": {
+            "$ref": "NMF:DataTypes:General:Latitude"
+        },
+        "Longitude": {
+            "$ref": "NMF:DataTypes:General:Longitude"
+        },
+        "Elevation": {
+            "$ref": "NMF:DataTypes:General:Elevation"
+        }
+    }
+}

@@ -69,7 +69,7 @@ class ArtillerySim:
         except Exception as e:
             print(e)
 
-    def invalidate(self, time_ms: int) -> None:
+    def update(self, time_ms: int) -> None:
 
         if not isinstance(time_ms, int):
 
@@ -86,7 +86,7 @@ class ArtillerySim:
 
         return
 
-    def send_message(self, message: dict) -> None:
+    def process_message(self, message: dict) -> None:
 
         if not isinstance(message, dict):
 
